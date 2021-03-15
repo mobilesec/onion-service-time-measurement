@@ -1,0 +1,22 @@
+## Logging
+## Send all messages of level 'notice' or higher to /var/log/tor/notices.log
+Log notice file /var/log/tor/notices.log
+## Send all messages of level 'info' possible message to /var/log/tor/info.log
+Log info file /var/log/tor/info.log
+## Send every possible message to /var/log/tor/debug.log
+Log debug file /var/log/tor/debug.log
+
+## Control port
+ControlPort 9051
+HashedControlPassword 16:CCA169830431CAB5608D58317D89A87D314B84B42FCCF3EDC82FD8B4E4 
+
+## Run as daemon in background
+RunAsDaemon 1
+
+## The directory for keeping all the keys/etc. By default, we store
+## things in $HOME/.tor on Unix, and in Application Data\tor on Windows.
+DataDirectory /var/lib/tor
+ 
+
+SafeLogging 0
+
